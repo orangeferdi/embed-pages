@@ -33,6 +33,6 @@ new EmbedBuilder()
 ```
 
 » After this -> paste  `await embedPages(interaction, embeds);` to let the bot create the pages and thats it!
-
+ 
 ## ➝ Preview
 ![Alt text](https://orangeferdi.at/orangecontent/uploads/2022/08/preview.png "Preview")
