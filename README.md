@@ -2,22 +2,22 @@
 
 
 ## ➝ Whats that
-» A handler to create embedded pages with buttons for pagination. 
+• A handler to create embedded pages with buttons for pagination. 
 
 ## ➝ Requirements
-» ["Handler"] `pages.js` 
+• ["Handler"] `pages.js` 
 
-» [Example command] `embed.js`
+• [Example command] `embed.js`
 
 
 ## ➝ Usage
-» Copy the `pages.js` file into the `Handlers` folder
+• Copy the `pages.js` file into the `Handlers` folder
 
-» Create a command, an interaction or anything you want. 
+• Create a command, an interaction or anything you want. 
 
-» Paste `const { embedPages } = require('../../Handlers/pages.js');` at the top of the created file *(Or wherever your file is located)*
+• Paste `const { embedPages } = require('../../Handlers/pages.js');` at the top of the created file *(Or wherever your file is located)*
 
-» Create an array with embeds you want for the displayed pages
+• Create an array with embeds you want for the displayed pages
 
 ```
 const embeds = [ 
@@ -33,7 +33,7 @@ new EmbedBuilder()
 ];
 ```
 
-» After this -> paste  `await embedPages(interaction, embeds);` to let the bot create the pages and thats it!
+• After this -> paste  `await embedPages(interaction, embeds);` to let the bot create the pages and thats it!
  
 ## ➝ Preview
 ![Alt text](https://orangeferdi.at/orangecontent/uploads/2022/08/preview.png "Preview")
