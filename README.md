@@ -1,3 +1,6 @@
+![Alt text](https://orangeferdi.at/orangecontent/uploads/2022/08/thumb.png "Thumbnail")
+
+
 ## ➝ Whats that
 » A handler to create embedded pages with buttons for pagination. 
 
@@ -8,8 +11,11 @@
 
 ## ➝ Usage
 » Copy the `pages.js` file into the `Handlers` folder
+
 » Create a command, an interaction or anything you want. 
+
 » Paste `const { embedPages } = require('../../Handlers/pages.js');` at the top of the created file *(Or wherever your file is located)*
+
 » Create an array with embeds you want for the displayed pages
 
 ```
@@ -27,3 +33,6 @@ new EmbedBuilder()
 ```
 
 » After this -> paste  `await embedPages(interaction, embeds);` to let the bot create the pages and thats it!
+
+## ➝ Preview
+![Alt text](https://orangeferdi.at/orangecontent/uploads/2022/08/preview.png "Preview")
