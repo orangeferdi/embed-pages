@@ -6,6 +6,7 @@
 
 ## ➝ Requirements
 » ["Handler"] `pages.js` 
+
 » [Example command] `embed.js`
 
 
