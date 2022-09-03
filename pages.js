@@ -6,7 +6,7 @@ const {
 } = require('discord.js');
 
 module.exports = {
-  embedPages: async (client, interaction, embeds) => {
+  client.embedPages: async (interaction, embeds) => {
     const pages = {};
     const getRow = (id) => {
       //Create the action row with buttons
