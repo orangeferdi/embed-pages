@@ -32,6 +32,6 @@ module.exports = {
         .setColor('Blue'),
     ];
 
-    await embedPages(client, interaction, embeds);
+    await embedPages(interaction, embeds);
   },
 };
