@@ -9,34 +9,32 @@ module.exports = {
   client.embedPages: async (interaction, embeds) => {
     const pages = {};
     const getRow = (id) => {
-      //Create the action row with buttons
+      //-------------- Create the action row with buttons --------------
       const row = new ActionRowBuilder();
-
-      row.addComponents(
-        new ButtonBuilder()
+      
+      return new ActionRowBuilder().addComponents(
+      new ButtonBuilder()
           .setLabel('◀')
           .setCustomId('prev_embed')
           .setStyle(ButtonStyle.Primary)
-          .setDisabled(pages[id] === 0)
-      );
-
-      row.addComponents(
-        new ButtonBuilder()
+          .setDisabled(pages[id] === 0),
+      new ButtonBuilder()
           .setLabel('▶')
           .setCustomId('next_embed')
           .setStyle(ButtonStyle.Primary)
           .setDisabled(pages[id] === embeds.length - 1)
-      );
+        
+      // -------------- Any other custom Button (if needed) --------------
+      //new ButtonBuilder()
+      //  .setLabel('Your label')
+      //  .setCustomId('your_custom_id')
+      //  .setStyle(ButtonStyle.Primary)
+      //  .setDisabled(pages[id] === embeds.length - 1)
+      // -------------- Any other custom Button (if needed) --------------
 
-      // -------------- Any other custom Button (if needed) --------------
-      //   row.addComponents(
-      //     new ButtonBuilder()
-      //       .setLabel('Any label you want')
-      //       .setCustomId('custom_id')
-      //       .setStyle(ButtonStyle.AnyStyleYouWant)
-      //   );
-      // -------------- Any other custom Button (if needed) --------------
-      return row;
+      );
+      
+      //-------------- Create the action row with buttons --------------
     };
 
     const id = interaction.user.id;
@@ -88,7 +86,7 @@ module.exports = {
       });
     });
 
-    // -------------- Not needed --------------
+    // -------------- Not needed but cool to have --------------
     collector.on('end', async (reason) => {
       if (reason === 'time') {
         const warningEmbed = new EmbedBuilder()
@@ -102,6 +100,6 @@ module.exports = {
         });
       }
     });
-    // -------------- Not needed --------------
+    // -------------- Not needed but cool to have --------------
   },
 };
